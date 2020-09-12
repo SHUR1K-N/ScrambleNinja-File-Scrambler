@@ -1,5 +1,3 @@
-import re
-import time; import os
 from colorama import init
 from termcolor import colored
 
