@@ -1,5 +1,6 @@
 from colorama import init
 from termcolor import colored
+import os; import re
 
 byteList = []
 
@@ -12,8 +13,7 @@ BANNER1 = colored('''
     ▒ ▒▓▒ ▒ ░░ ░▒ ▒  ░░ ▒▓ ░▒▓░ ▒▒   ▓▒█░░ ▒░   ░  ░░▒▓███▀▒░ ▒░▓  ░░░ ▒░ ░░ ▒░   ▒ ▒ ░▓  ░ ▒░   ▒ ▒  ▒▓▒▒░   ▒▒   ▓▒█░
     ░ ░▒  ░ ░  ░  ▒     ░▒ ░ ▒░  ▒   ▒▒ ░░  ░      ░▒░▒   ░ ░ ░ ▒  ░ ░ ░  ░░ ░░   ░ ▒░ ▒ ░░ ░░   ░ ▒░ ▒ ░▒░    ▒   ▒▒ ░
     ░  ░  ░  ░          ░░   ░   ░   ▒   ░      ░    ░    ░   ░ ░      ░      ░   ░ ░  ▒ ░   ░   ░ ░  ░ ░ ░    ░   ▒
-          ░  ░ ░         ░           ░  ░       ░    ░          ░  ░   ░  ░         ░  ░           ░  ░   ░        ░  ░
-             ░                                            ░''', 'blue')
+          ░  ░ ░         ░           ░  ░       ░    ░          ░  ░   ░  ░         ░  ░           ░  ░   ░        ░  ░''', 'blue')
 BANNER2 = colored('''                                ScrambleNinja: The File Scrambler & Unscrambler''', 'red')
 BANNER3 = colored('''                                -----------------------------------------------''', 'blue')
 
@@ -66,6 +66,8 @@ def outputFileName():
         return(output)
 
 
+############### Main ###############
+
 if __name__ == "__main__":
 
     printBanner()
@@ -75,11 +77,24 @@ if __name__ == "__main__":
         print("1. Scramble a file\n2. Unscramble a file")
         operation = input("\nSelect operation number: ")
         if (operation in ["1", "2"]):
-            filePath = input("Input file path: ")
+            while (True):
+                filePath = input("\nEnter file path: ")
+                if (os.path.isfile(filePath) is True):
+                    break
+                else:
+                    clrscr()
+                    print("\nEither file does not exist or invalid path entered. Try again.")
+                    continue
+            clrscr()
             output = outputFileName()
+            print("\nWorking...", end='')
             operate()
             break
         else:
             clrscr()
             print("\nInvalid entry. Choose either option 1 or 2. Try again.\n")
             continue
+    clrscr()
+    print("\n\nThe task completed successfully.")
+    print("Press Enter to exit.")
+    input()
