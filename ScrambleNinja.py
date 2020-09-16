@@ -4,6 +4,8 @@ import os; import re
 
 byteList = []
 
+init() # Initilizing colors
+
 BANNER1 = colored('''
       ██████  ▄████▄   ██▀███   ▄▄▄       ███▄ ▄███▓ ▄▄▄▄    ██▓    ▓█████  ███▄    █  ██▓ ███▄    █  ▄▄▄██▀▀▀▄▄▄
     ▒██    ▒ ▒██▀ ▀█  ▓██ ▒ ██▒▒████▄    ▓██▒▀█▀ ██▒▓█████▄ ▓██▒    ▓█   ▀  ██ ▀█   █ ▓██▒ ██ ▀█   █    ▒██  ▒████▄
@@ -19,7 +21,6 @@ BANNER3 = colored('''                                ---------------------------
 
 
 def printBanner():
-    init()
     print(BANNER1), print(BANNER2), print(BANNER3)
 
 
@@ -72,29 +73,36 @@ if __name__ == "__main__":
 
     printBanner()
 
-    while (True):
-        print("Operations:-")
-        print("1. Scramble a file\n2. Unscramble a file")
-        operation = input("\nSelect operation number: ")
-        if (operation in ["1", "2"]):
-            while (True):
-                filePath = input("\nEnter file path: ")
-                if (os.path.isfile(filePath) is True):
-                    break
-                else:
-                    clrscr()
-                    print("\nEither file does not exist or invalid path entered. Try again.")
-                    continue
-            clrscr()
-            output = outputFileName()
-            print("\nWorking...", end='')
-            operate()
-            break
-        else:
-            clrscr()
-            print("\nInvalid entry. Choose either option 1 or 2. Try again.\n")
-            continue
-    clrscr()
-    print("\n\nThe task completed successfully.")
-    print("Press Enter to exit.")
-    input()
+    try:
+
+        while (True):
+            print("Operations:-")
+            print("1. Scramble a file\n2. Unscramble a file")
+            operation = input("\nSelect operation number: ")
+            if (operation in ["1", "2"]):
+                while (True):
+                    filePath = input("\nEnter file path: ")
+                    if (os.path.isfile(filePath) is True):
+                        break
+                    else:
+                        clrscr()
+                        print("\nEither file does not exist or invalid path entered. Try again.")
+                        continue
+                clrscr()
+                output = outputFileName()
+                print("\nWorking...", end='')
+                operate()
+                break
+            else:
+                clrscr()
+                print("\nInvalid entry. Choose either option 1 or 2. Try again.\n")
+                continue
+        clrscr()
+        print("\n\nThe task completed successfully.")
+        print("Press Enter to exit.")
+        input()
+    except KeyboardInterrupt:
+        clrscr()
+        print("\nCTRL ^C\n\nThrew a wrench in the works.")
+        print("Press Enter to exit.")
+        input()
