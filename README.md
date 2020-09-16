@@ -51,7 +51,7 @@ For example, a .TXT file with the following lines:
 
 **Hence, it is not recommended to use this tool to scramble plain text files if your usage scenario is serious and/or your priority is confidentiality.**
 
-## Dependencies to "pip install"
+## Dependencies to PIP-Install
 - **colorama** (for colors)
 - **termcolor** (for colors)
 
