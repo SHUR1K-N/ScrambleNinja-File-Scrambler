@@ -42,7 +42,11 @@ For example, a .TXT file with the following lines:
 |**5** |I let my tape rock 'til my tape popped               |
 |**6** |Smokin' weed in Bambu, sippin' on Private Stock      |
 
+</div> 
+
 ... upon scrambling, becomes:
+
+<div align="center">
 
 |Line #|Line Text                                            |
 |:----:|-----------------------------------------------------|
@@ -53,7 +57,7 @@ For example, a .TXT file with the following lines:
 |**5** |I let my tape rock 'til my tape popped               |
 |**4** |Every Saturday Rap Attack, Mr. Magic, Marley Marl    |
 
-</div>
+</div> 
 
 **Hence, it is not recommended to use this tool to scramble plain text files if your usage scenario is serious and/or your priority is confidentiality.**
 
