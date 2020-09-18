@@ -7,6 +7,7 @@ This project was created in Python.
 
 ## File types tested as of yet & confirmed as fully supported
 - **.EXE**
+- **.FLAC**
 - **.JPEG / .JPG**
 - **.MOV**
 - **.MP3**
@@ -14,6 +15,7 @@ This project was created in Python.
 - **.PDF**
 - **.PNG**
 - **.RAR**
+- **.WAV**
 - **.ZIP**
 
 *You may test other file extensions/types and report them as supported/unsupported to update this list in the future.*
