@@ -1,10 +1,10 @@
-from colorama import init
+import colorama
 from termcolor import colored
 import os; import re
 
 byteList = []
 
-init() # Initilizing colors
+colorama.init()
 
 BANNER1 = colored('''
       ██████  ▄████▄   ██▀███   ▄▄▄       ███▄ ▄███▓ ▄▄▄▄    ██▓    ▓█████  ███▄    █  ██▓ ███▄    █  ▄▄▄██▀▀▀▄▄▄
