@@ -3,6 +3,11 @@
 ## Description & Usage
 A tool that can scramble any file by rearranging the bytes it consists of—rendering it unreadable; and also unscramble any scrambled file (only if it was scrambled using this tool in the first place) by restoring the arrangement of bytes to be as the original, unscrambled file.
 
+<div align="center">
+<img src="https://github.com/SHUR1K-N/ScrambleNinja-Simple-File-Scrambler/blob/master/Images/Example.png" >
+<p>Example Execution</p>
+</div>
+
 This project was created in Python.
 
 ## File types tested as of yet & confirmed as fully supported
