@@ -31,6 +31,8 @@ Since this tool rearranges the *lines* of bytes in a file to scramble it, only t
 
 For example, a .TXT file with the following lines:
 
+<div align="center">
+
 |Line #|Line Text                                            |
 |:----:|-----------------------------------------------------|
 |**1** |It was all a dream, I used to read Word Up! magazine |
@@ -50,6 +52,8 @@ For example, a .TXT file with the following lines:
 |**6** |Smokin' weed in Bambu, sippin' on Private Stock      |
 |**5** |I let my tape rock 'til my tape popped               |
 |**4** |Every Saturday Rap Attack, Mr. Magic, Marley Marl    |
+
+</div>
 
 **Hence, it is not recommended to use this tool to scramble plain text files if your usage scenario is serious and/or your priority is confidentiality.**
 
