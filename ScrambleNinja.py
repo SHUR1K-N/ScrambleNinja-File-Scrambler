@@ -1,6 +1,6 @@
-import colorama
-from termcolor import colored
 import os; import re
+from termcolor import colored
+import colorama
 
 byteList = []
 
