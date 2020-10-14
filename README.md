@@ -1,4 +1,4 @@
-﻿# ScrambleNinja: Simple File Scrambler & Unscrambler
+﻿# ScrambleNinja: File Scrambler & Unscrambler
 
 ## Description & Usage
 A tool that can scramble any file by rearranging the bytes it consists of—rendering it unreadable; and also unscramble any scrambled file (only if it was scrambled using this tool in the first place) by restoring the arrangement of bytes to be as the original, unscrambled file.
