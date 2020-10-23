@@ -10,7 +10,7 @@ A tool that can scramble any file by rearranging the bytes it consists of—rend
 
 This project was created in Python.
 
-## File types tested as of yet & confirmed as fully supported
+## File types tested so far & confirmed as fully supported
 - **.EXE**
 - **.FLAC**
 - **.JPEG / .JPG**
@@ -32,7 +32,7 @@ The tool successfully scrambles these files, but once they are *unscrambled*, Mi
 This happens due to the byte-scrambling approach implemented in this tool. When the byte lines are scrambled, a pesky little "end-of-line / carriage-return" byte combination is left at the very end of the bytes list, which Microsoft Office applications apparently are quite strict about. When you choose to let Microsoft "fix" this, that final combination is simply removed by Microsoft. **Hence, technically, the scrambling and unscrambling work as ultimately intended; but the mechanism is just a little "janky".**
 
 ### Plain text files:
-Since this tool rearranges the *lines* of bytes in a file to scramble it, only the *line* arrangement of the plain text will be scrambled. This may impact the human readibility of the file by throwing a wrench in the typical sequential reading process, but the overall context may somewhat still be known by reading the text even if completely unordered.
+Since this tool rearranges the *lines* of bytes in a file in order to scramble it, only the *line* arrangement of the plain text will be scrambled. This may impact the human readibility of the file by throwing a wrench in the typical sequential reading process, but the overall context may somewhat still be intelligible even if completely unordered.
 
 For example, a .TXT file with the following lines:
 
