@@ -1,4 +1,4 @@
-import os; import re
+import os; import time; import re
 from termcolor import colored
 import colorama
 
@@ -91,15 +91,20 @@ if __name__ == "__main__":
                 clrscr()
                 output = outputFileName()
                 print("\nWorking...", end='')
+
+                start = time.time()
                 operate()
                 break
             else:
                 clrscr()
                 print("\nInvalid entry. Choose either option 1 or 2. Try again.\n")
                 continue
+
+        completionTime = time.time() - start
+
         clrscr()
-        print("\n\nThe task completed successfully.")
-        print("Press Enter to exit.")
+        print(f"\nThe task completed successfully in {completionTime} seconds.")
+        print("Press Enter to exit. GG;WP.")
         input()
     except KeyboardInterrupt:
         clrscr()
