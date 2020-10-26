@@ -68,7 +68,8 @@ For example, a .TXT file with the following lines:
 **Hence, it is not recommended to use this tool to scramble plain text files if your usage scenario is serious and/or your priority is confidentiality.**
 
 ## Note
-Since ScrambleNinja is currently RAM-intensive (due to holding the bytes-to-scramble within a list), please ensure your system uses the 64-bit architecture and your Python installation is 64-bit as well, for optimal performance. If either of these two criteria is not matched, ScrambleNinja may not work for file sizes upwards of ~2GBs since the 32-bit architecture and/or 32-bit installation Python will only allow 4GBs of RAM to be utilized no matter how many sticks you have installed (You will get "MemoryError" in the ScrambleNinja window if it fails). You can read more about why 32-bit systems are limited to 4GBs of RAM utilization [here](https://superuser.com/questions/372881/is-there-a-technical-reason-why-32-bit-windows-is-limited-to-4gb-of-ram).
+ScrambleNinja is currently RAM-intensive (due to holding the bytes-to-scramble within a list). Hence, please ensure your system uses the 64-bit architecture *and* your Python installation is 64-bit as well for optimal performance. If either of these two criteria is not matched, ScrambleNinja may not work for file sizes upwards of ~2GBs since the 32-bit architecture and/or 32-bit installation Python will only allow 4GBs of RAM to be utilized no matter how many sticks you have installed (You will get **"MemoryError"** in the ScrambleNinja window if it fails). 
+You can read more about why 32-bit systems are limited to 4GBs of RAM utilization [here](https://superuser.com/questions/372881/is-there-a-technical-reason-why-32-bit-windows-is-limited-to-4gb-of-ram).
 
 ## Dependencies to PIP-Install
 - **colorama** (for colors)
