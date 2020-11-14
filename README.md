@@ -4,7 +4,7 @@
 A tool that can scramble any file by rearranging the bytes it consists of—rendering it unreadable; and also unscramble any scrambled file (only if it was scrambled using this tool in the first place) by restoring the arrangement of bytes to be as the original, unscrambled file.
 
 <div align="center">
-<img src="https://github.com/SHUR1K-N/ScrambleNinja-File-Scrambler/blob/master/Images/Example.png" >
+<img src="https://raw.githubusercontent.com/SHUR1K-N/ScrambleNinja-File-Scrambler/master/Images/Example.png" >
 <p>Example Execution</p>
 </div>
 
@@ -48,7 +48,7 @@ For example, a .TXT file with the following lines:
 |**5** |I let my tape rock 'til my tape popped               |
 |**6** |Smokin' weed in Bambu, sippin' on Private Stock      |
 
-</div> 
+</div>
 
 ... upon scrambling, becomes:
 
@@ -63,7 +63,7 @@ For example, a .TXT file with the following lines:
 |**5** |I let my tape rock 'til my tape popped               |
 |**4** |Every Saturday Rap Attack, Mr. Magic, Marley Marl    |
 
-</div> 
+</div>
 
 **Hence, it is not recommended to use this tool to scramble plain text files if your usage scenario is serious and/or your priority is confidentiality.**
 
