@@ -78,4 +78,4 @@ You can read more about why 32-bit systems are limited to 4GBs of RAM utilizatio
 
 ------------
 
-My website: http://bit.do/SHUR1KN
+My website: https://TheComputerNoob.com
