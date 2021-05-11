@@ -8,7 +8,7 @@ A tool that can scramble any file by rearranging the bytes it consists of—rend
 <p>Example Execution</p>
 </div>
 
-This project was created in Python, as a product of curiosity with byte re-arrangement and un-re-arrangement within files.
+This project was created in Python, as a product of curiosity regarding byte re-arrangement and un-re-arrangement within files.
 
 ## File types tested so far & confirmed as fully supported
 - **.EXE**
